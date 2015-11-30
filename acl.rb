@@ -12,7 +12,7 @@ end
 
 user, resource, value = ARGV.pop 3
 
-Group.setup unless  redis.exists 'acl.groups'
+Group.setup unless redis.exists 'acl.groups'
 User.setup unless redis.exists 'acl.users'
 
 Group.add_to 'dev', 'ben'
