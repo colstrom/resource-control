@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
 require 'redis'
 
 require_relative 'lib/user'
