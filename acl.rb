@@ -20,7 +20,7 @@ Group.add_to 'ops', 'chris'
 
 Resource.grant 'onlyops', 'ops'
 
-if User.exists?(user) and Resource.allowed?(resource, user)
+if User.exists?(user) && Resource.allowed?(resource, user)
   Resource.change resource, value
   puts Resource.read resource
 else
